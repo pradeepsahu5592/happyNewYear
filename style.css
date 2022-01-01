@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Jost:wght@600&family=Source+Sans+3:wght@900&family=Source+Sans+Pro:wght@600&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    /* background: lightblue; */
+    display: grid;
+    place-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.frm1{
+    width: 200px;
+    height: 200px;
+    background: magenta;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    filter: blur(150px);
+
+}
+.frm2{
+    width: 200px;
+    height: 200px;
+    background: mediumvioletred;
+    position: absolute;
+    bottom: 60px;
+    left: 70px;
+    filter: blur(150px);
+}
+.frm5{
+    width: 300px;
+    height: 300px;
+    background: rgb(63, 21, 199);
+    position: absolute;
+    bottom: 0px;
+    left: 370px;
+    filter: blur(150px);
+}
+.container{
+    width: 350px;
+    height: 440px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.container .txt{
+    width: 100%;
+    height: 250px;
+    background: rgba(0, 0, 255,.1);
+    text-align: center;
+}
+
+.container .txt .txt1{
+    font-size: 140px;
+    margin: 0%;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.container .txt .txt2{
+    font-size: 60px;
+    margin: 0%;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.container .txt .txt3{
+    font-size: 70px;
+    margin: 0%;
+    position: absolute;
+    top: 255px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.container .txt #txt4{
+    margin: 0%;
+    position: absolute;
+    bottom: 80px;
+    left: 50%; 
+    transform: translate(-50%);
+}
+
+.btn{
+    width: 100%;
+    line-height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.btnbtn{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    margin-top:10px ;
+    border: 1px solid rgb(255, 255, 255);
+
+}
+.btn1{
+    background: #9D9D9D;
+}
+.color1{
+    background: #9D9D9D;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.btn2{
+    background: #FF95C5;
+
+}
+.color2{
+    background: #FF95C5;
+
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+
+.btn3{
+    background: rgb(255, 255, 255);
+    border: 1px solid #bebebe;
+
+}
+.color3{
+    background: rgb(255, 255, 255);
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+
+.btn4{
+    background: rgb(238, 255, 0);
+}
+.color4{
+    background:rgb(238, 255, 0);
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.btn5{
+    background: rgb(0, 255, 34);
+}
+.color5{
+    background: rgb(0, 255, 34);
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+
+.white{
+    color: white;
+}
+
+
+
+
+
+
+/* ................. */
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    perspective: 700px;
+
+    width: 100%;
+    line-height: 120px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.box{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    transform-style: preserve-3d;
+
+}
+.textBox{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    transform-style: preserve-3d;
+    animation: animate 2s linear infinite;
+
+}
+@keyframes animate {
+    0% {
+        transform: rotateY(360deg);
+
+    }
+    100%
+    {
+        transform: rotateY(0deg);
+    }
+    
+}
+
+img{
+    width: 100%;
+    height: 100px;
+}
+.shadow{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(rgba(0,0,0,.2),transparent,transparent);
+    filter: blur(5px);
+    animation: animateShadow 1s linear infinite;
+}
+@keyframes animateShadow {
+    0%,100%{
+        transform: translateX(-50%) scale(1);
+    }
+    50%{
+        transform: translateX(-50px) scale(0.2);
+    }
+    
+}
+.textBox .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+.textBox .text:nth-child(2)
+{
+    transform: rotateY(180deg);
+}
+.textBox .text h1{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+
+/* ............................................... */
